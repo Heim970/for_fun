@@ -33,11 +33,11 @@ public class tree {
 
 				for (int i = 0; i < n; i++) {
 					for (int j = 0; j <= n; j++) {
-						int r = random.nextInt(0, 12);
 
 						if (i + j < n) {
 							System.out.print(" ");
 						} else {
+							int r = random.nextInt(0, 12);
 							if (r < 5) {
 								System.out.print(colors[r] + "*" + "\u001B[0m"); // 색 지정하고 * 출력 후 색 초기화
 							} else {
@@ -47,9 +47,9 @@ public class tree {
 					} // end for #2-1
 
 					for (int k = 0; k < n; k++) {
-						int r = random.nextInt(0, 12);
 
 						if (k < i) {
+							int r = random.nextInt(0, 12);
 							if (r < 5) {
 								System.out.print(colors[r] + "*" + "\u001B[0m"); // 색 지정하고 * 출력 후 색 초기화
 							} else {
